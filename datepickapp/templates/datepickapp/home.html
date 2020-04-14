@@ -1,1 +1,38 @@
-<h1>datepickproject</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Picker</title>
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+</head>
+<body>
+    <h1>CUSTOM<span>DATE</span>PICKER</h1>
+
+    <div class="date-picker">
+        <div class="selected-date"></div>
+
+        <div class="dates">
+            <div class="month">
+                <div class="arrows prev-mth">&lt;</div>
+                <div class="mth">April 2020</div>
+                <div class="arrows next-mth">&gt;</div>
+            </div>
+
+            <div class="days">
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'css/main.js' %}"></script>
+</body>
+</html>
